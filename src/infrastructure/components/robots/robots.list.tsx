@@ -8,7 +8,7 @@ export const RobotList = () => {
     const { handlerEraser, robots } = useContext(robotsContext);
     return (
         <section>
-            <h1>Robots</h1>
+            <h1>!Robots!</h1>
             <ul className="robots">
                 {robotsData.map((item: IRobots) => (
                     <RobotCard robot={item} key={item.name}></RobotCard>
