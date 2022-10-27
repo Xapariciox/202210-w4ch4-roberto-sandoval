@@ -1,16 +1,17 @@
 import { useContext } from 'react';
+import { robotsData } from '../../../models/robotsData';
 import { IRobots } from '../../../models/robotsModels';
 import { robotsContext } from '../context/context';
 import { RobotCard } from './robots.cards';
 
 export const RobotList = () => {
-    const { robots } = useContext(robotsContext);
+    const { handlerEraser, robots } = useContext(robotsContext);
     return (
         <section>
-            <h2>Robots</h2>
-            <ul>
-                {robots.map((item: IRobots) => (
-                    <RobotCard item={item}></RobotCard>
+            <h1>Robots</h1>
+            <ul className="robots">
+                {robotsData.map((item: IRobots) => (
+                    <RobotCard robot={item} key={item.name}></RobotCard>
                 ))}
             </ul>
         </section>

@@ -1,11 +1,12 @@
 import { createContext } from 'react';
-import { robots } from '../../../models/robots';
 import { IRobots } from '../../../models/robotsModels';
 
 const initialContext: {
     robots: Array<IRobots>;
+    handlerEraser: (name: string) => void;
 } = {
-    robots: robots,
+    robots: [],
+    handlerEraser: () => undefined,
 };
 
 export const robotsContext = createContext(initialContext);

@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(151, 99, 99);
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+#root {
+    display: flex;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.info button {
+    max-width: 100px;
+    /* border: none; */
+    /* border-radius: 2rem; */
+    font-size: 15px;
+}

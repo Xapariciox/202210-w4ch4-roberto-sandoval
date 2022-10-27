@@ -1,3 +1,9 @@
+import { RobotList } from '../robots/robots.list';
+
 export const App = () => {
-    return <></>;
+    return (
+        <>
+            <RobotList></RobotList>
+        </>
+    );
 };

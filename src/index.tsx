@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { App } from './infrastructure/components/app/App';
+import { RobotContextProvider } from './infrastructure/components/context/provider';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
-        <App />
+        <RobotContextProvider>
+            <App />
+        </RobotContextProvider>
     </React.StrictMode>
 );
 
