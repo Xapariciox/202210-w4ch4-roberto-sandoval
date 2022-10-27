@@ -4,7 +4,7 @@ import { IRobots } from '../../../models/robotsModels';
 import { robotsContext } from '../context/context';
 
 export function RobotCard({ robot }: { robot: IRobots }) {
-    const { handlerEraser, robots } = useContext(robotsContext);
+    const { handlerEraser } = useContext(robotsContext);
 
     return (
         <>
