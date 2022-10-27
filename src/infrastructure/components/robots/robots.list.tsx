@@ -1,7 +1,6 @@
-import { useContext } from 'react';
 import { robotsData } from '../../../models/robotsData';
 import { IRobots } from '../../../models/robotsModels';
-import { robotsContext } from '../context/context';
+
 import { RobotCard } from './robots.cards';
 
 export const RobotList = () => {
