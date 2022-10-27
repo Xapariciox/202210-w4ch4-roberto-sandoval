@@ -1,3 +1,9 @@
+import { RobotList } from '../robots/robots.list';
+
 export const App = () => {
-    return <h1>Hola</h1>;
+    return (
+        <>
+            <RobotList></RobotList>
+        </>
+    );
 };
