@@ -5,7 +5,6 @@ import { robotsContext } from '../context/context';
 import { RobotCard } from './robots.cards';
 
 export const RobotList = () => {
-    const { handlerEraser, robots } = useContext(robotsContext);
     return (
         <section>
             <h1>!Robots!</h1>
