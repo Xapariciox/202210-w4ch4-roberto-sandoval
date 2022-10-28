@@ -10,7 +10,7 @@ export function RobotContextProvider({ children }: { children: JSX.Element }) {
     const [robots, setRobots] = useState(initialRobots);
 
     const handlerEraser = (name: string) => {
-        setRobots(robotsData.filter((item) => item.name !== name));
+        setRobots(robots.filter((item) => item.name !== name));
     };
 
     const context = {
